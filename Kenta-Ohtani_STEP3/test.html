@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界一甘いお店 - お問い合わせ</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h2>世界一甘いお店</h2>
+        </header>
+
+        <div class="content-container">
+            <aside>
+                <nav>
+                    <ul>
+                        <li><span>・</span><a href="https://otaru-amato.com">トップ</a></li>
+                        <li><span>・</span><a href="https://otaru-amato.com">新着情報</a></li>
+                        <li><span>・</span><a href="https://otaru-amato.com">オススメのスイーツ</a></li>
+                        <li><span>・</span><a href="https://otaru-amato.com">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <table>
+                    <tr>
+                        <td class="form-label">お名前</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">お近くのお店</td>
+                        <td>
+                            <select name="store_location">
+                                <option value="">選択してください</option>
+                                <option value="hokkaido-tohoku">北海道・東北</option>
+                                <option value="kanto">関東</option>
+                                <option value="chubu">中部</option>
+                                <option value="kansai">関西</option>
+                                <option value="chugoku-shikoku">中国・四国</option>
+                                <option value="kyushu-okinawa">九州・沖縄</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">電話番号</td>
+                        <td><input type="tel" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">メールアドレス</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">お問い合わせ種別</td>
+                        <td>
+                            <input type="radio" id="product_inquiry" name="inquiry_type" value="product">
+                            <label for="product_inquiry">商品について</label>
+                            <input type="radio" id="staff_inquiry" name="inquiry_type" value="staff">
+                            <label for="staff_inquiry">従業員について</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">お問い合わせ内容</td>
+                        <td>
+                            <textarea name="inquiry_details"></textarea>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="button-container">
+                    <input type="submit" value="送信">
+                </div>
+            </main>
+        </div>
+        <footer>
+            </footer>
+    </div>
+</body>
+</html>

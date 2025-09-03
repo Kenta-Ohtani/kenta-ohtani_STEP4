@@ -1,0 +1,128 @@
+/* 全体のマージンとパディングをリセット */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央寄せ */
+}
+
+/* 全体のコンテンツを囲むコンテナ */
+.page-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ヘッダー部分 */
+header {
+    background-color: #ffe4e1; /* 薄いピンク */
+    padding: 20px;
+    text-align: center;
+}
+
+/* メインコンテンツ（サイドバーとメイン部分）を横並びにするコンテナ */
+.content-container {
+    display: flex;
+    flex: 1; /* 残りの高さをすべて占める */
+}
+
+/* サイドバー部分 */
+aside {
+    background-color: #e0ffff; /* 薄い水色 */
+    width: 200px; /* 固定幅 */
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+/* メイン部分 */
+main {
+    background-color: #ffffe0; /* 薄い黄色 */
+    flex: 1; /* 残りの幅をすべて占める */
+    padding: 20px;
+}
+
+/* フッター部分のスタイルをCSSに移動 */
+footer {
+    background-color: #d3d3d3; /* 薄い灰色 */
+    height: 50px; /* 固定高さ */
+    width: 100%; /* 親要素の幅に合わせて100%に */
+}
+
+/* --- 既存のスタイル --- */
+/* ナビゲーションメニューのスタイル */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav li {
+    margin: 5px 0;
+}
+
+nav span {
+    font-weight: bold;
+    cursor: default;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 4px solid black;
+}
+
+.form-label {
+    font-weight: bold;
+    text-align: right;
+    width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 40ch;
+}
+
+textarea {
+    width: 30ch;
+    height: 5em;
+}
+
+/* 送信ボタンのスタイル */
+.button-container {
+    text-align: right; /* 送信ボタンを右寄せ */
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
