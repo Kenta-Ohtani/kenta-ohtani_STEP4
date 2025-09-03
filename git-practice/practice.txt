@@ -1,5 +1,0 @@
-git test  //うまくできるかな
-
-git test2 //ちゃんとできるかな
-
-git test3 //feature-branchでできるかな
