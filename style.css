@@ -1,0 +1,145 @@
+/* 全体のリセットと基本設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0;
+    padding: 0;
+    /* フォームコンテナを中央に配置するための設定 */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* 水平中央に配置 */
+    min-height: 100vh;
+}
+
+/* フォーム入力 (h1タグ) のスタイル - 色分けと中央配置 */
+h1 {
+    width: 100%; 
+    text-align: center;
+    color: white; 
+    background-color: #007bff; /* h1タグの背景色を青に */
+    padding: 20px 0;
+    margin: 0 0 30px 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 画面内に表示させる範囲を指定するコンテナ */
+.container {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 画面いっぱいに表示させないための幅指定 (中央配置) */
+    max-width: 600px; 
+    width: 90%; 
+    /* 入力フォームの文字は左寄せ */
+    text-align: left; 
+    margin-bottom: 30px; /* 下部にも余白を追加 */
+}
+
+/* エラーメッセージのスタイル */
+.error-messages {
+    background-color: #ffe0e0;
+    border: 1px solid #ff9999;
+    color: #cc0000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.error-messages h2 {
+    color: #cc0000;
+    font-size: 1.2em;
+    margin-top: 0;
+    border-bottom: 1px solid #ff9999;
+    padding-bottom: 5px;
+}
+
+.error-messages p {
+    margin: 5px 0;
+}
+
+
+/* フォームグループのスタイル - 間隔の統一 */
+.form-group {
+    margin-bottom: 20px; /* 全てのフォーム要素の下に統一した間隔を設定 */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select { 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+/* 送信ボタンを囲むdiv - 左寄せの指定 */
+.submit-button-wrap {
+    text-align: left;
+}
+
+/* 送信ボタンのスタイル - 青色、左寄せ */
+#submit-btn {
+    display: inline-block; /* 幅をコンテンツに合わせる */
+    min-width: 200px; 
+    padding: 10px 20px;
+    background-color: #007bff; /* 青色 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 確認画面 (conform.php) のスタイル */
+.confirm-item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    align-items: flex-start;
+}
+
+.confirm-item:last-of-type {
+    border-bottom: none;
+}
+
+.confirm-item .label {
+    font-weight: bold;
+    color: #333;
+    width: 150px; 
+    flex-shrink: 0;
+}
+
+.confirm-item .value {
+    flex-grow: 1;
+    color: #555;
+    word-break: break-all;
+}
+
+.button-group {
+    margin-top: 30px;
+    text-align: left; 
+}
+
+.button-group button {
+    width: 150px;
+    background-color: #6c757d;
+}
+
+.button-group button:hover {
+    background-color: #5a6268;
+}
